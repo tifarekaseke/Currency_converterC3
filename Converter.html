@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<div class="container">
+    <div id="result">
+        <h2>Welcome to the Currency Converter!</h2>
+        <p>Please enter your conversion details below.</p>
+    </div> <!-- Welcome message at the top -->
+
+    <select id="currencyFrom">
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+        <option value="EUR">EUR</option>
+        <option value="RUB">RUB</option>
+        <option value="GBP">GBP</option>
+    </select>
+
+    <select id="currencyTo">
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+        <option value="EUR">EUR</option>
+        <option value="RUB">RUB</option>
+        <option value="GBP">GBP</option>
+    </select>
+
+    <input type="number" id="amount" placeholder="Amount" />
+    <button onclick="converter()">Convert</button>
+
+    <div id="conversionResult"></div> <!-- Div for showing conversion results -->
+</div>
+
+<script src="currency_converter.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
